@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="list-group">
+      <% (1..5).each do |i| %>
+        <%= link_to '/', class: "list-group-item list-group-item-info" do %>
+          <span class="badge">14</span>
+          <%= "Cras justo odio#{i}" %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <%= image_tag("13_232232.jpg", class: "img-responsive") %>
+  </div>
+</div>
