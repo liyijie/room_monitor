@@ -26,7 +26,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">机房选择 <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <% current_user.areas.each do |area| %>
-                  <li><%= link_to area.name, area_path(area) %></li>
+                  <li><%= link_to area.name, area_path(area), class: "list-group-item" %></li>
                 <% end %>
               </ul>
             </li>
