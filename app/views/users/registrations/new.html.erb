@@ -5,15 +5,15 @@
 
   <div class="form-group">
     <label for="email">邮箱</label>
-    <input type="email" class="form-control" autofocus="autofocus">
+    <%= f.email_field :email, autofocus: true, class: "form-control" %>
   </div>
   <div class="form-group">
     <label for="password">密码</label>
-    <input type="password" class="form-control" autofocus="autofocus">
+    <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
   </div>
   <div class="form-group">
     <label for="password_confirmation">确认密码</label>
-    <input type="password_confirmation" class="form-control" autofocus="autofocus">
+    <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
   </div>
 
   <button type="submit" class="btn btn-lg btn-default">注册</button>
