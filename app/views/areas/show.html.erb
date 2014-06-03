@@ -1,9 +1,15 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @area.name %>
-</p>
-
-<%= link_to 'Edit', edit_area_path(@area) %> |
-<%= link_to 'Back', areas_path %>
+<div class="row">
+  <div class="col-md-3">
+    <div class="list-group">
+      <% (1..5).each do |i| %>
+        <%= link_to '/', class: "list-group-item list-group-item-info" do %>
+          <%= "Cras justo odio#{i}" %>
+          <span class="badge">14</span>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <%= image_tag(@area.avatar.url, class: "img-responsive") %>
+  </div>
+</div>

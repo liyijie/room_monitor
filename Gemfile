@@ -40,6 +40,10 @@ end
 # Authentication, Use devise gem
 gem 'devise', '~> 3.2.4'
 
+# File Uploader for image
+# gem "paperclip", "~> 4.1"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+
 # admin后台管理
 #gem 'rails_admin', '~> 0.6.2'
 
