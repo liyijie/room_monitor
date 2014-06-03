@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140531133018) do
+ActiveRecord::Schema.define(version: 20140602153207) do
 
   create_table "area_relations", force: true do |t|
     t.integer  "user_id"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 20140531133018) do
 
   create_table "areas", force: true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rooms", force: true do |t|
+    t.string   "name"
+    t.text     "desc"
+    t.string   "identify"
+    t.string   "report_meta"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
